@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #C6284A;
+  --primary-dark: #A81F3C;
+  --accent: #E6C78B;
+  --cream: #F8F3EC;
+  --text-main: #2A2A2A;
+  --text-muted: #6B6B6B;
+  
+  --font-serif: var(--font-playfair), serif;
+  --font-sans: var(--font-montserrat), var(--font-inter), sans-serif;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+@layer utilities {
+  .bg-primary { background-color: var(--primary); }
+  .text-primary { color: var(--primary); }
+  .bg-accent { background-color: var(--accent); }
+  .text-accent { color: var(--accent); }
+  .bg-cream { background-color: var(--cream); }
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+@keyframes progress-shrink {
+    from { width: 100%; }
+    to { width: 0%; }
+}
+
+.animate-progress-shrink {
+    animation: progress-shrink linear forwards;
+}
