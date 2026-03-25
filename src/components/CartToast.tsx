@@ -59,7 +59,7 @@ const CartToast = () => {
                                 Checkout Now <ArrowRight size={12} />
                             </Link>
                             <Link 
-                                href="/cart"
+                                href="/checkout"
                                 onClick={hideNotification}
                                 className="px-5 bg-gray-50 text-gray-600 py-3.5 rounded-xl font-sans font-black text-[10px] uppercase tracking-widest text-center border border-gray-100 hover:bg-white transition-all"
                             >

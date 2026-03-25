@@ -1,4 +1,4 @@
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'https://syriagiftsapi.threedigitsoftware.com/api';
 const BACKEND_URL = API_BASE.replace('/api', '');
 
 export const getStorageUrl = (path: string | null) => {
